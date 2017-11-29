@@ -1,0 +1,24 @@
+.container{
+    background:rgb(255, 255, 255);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgba(182, 182, 182, 0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.noContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+}
+.body{
+    font-family: sans-serif;
+    background-color: #e4ebef;
+    display: flex;
+    height: 100vh;
+}
