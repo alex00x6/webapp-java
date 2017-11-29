@@ -13,5 +13,15 @@
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/MyServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Random</servlet-name>
+        <servlet-class>Random</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Random</servlet-name>
+        <url-pattern>/Random</url-pattern>
+    </servlet-mapping>
 
 </web-app>

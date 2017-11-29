@@ -10,7 +10,10 @@
     <form action="${pageContext.request.contextPath}/MyServlet" method="get" style="display: flex; justify-content: center;">
         <button type="submit">Click here to see some servlet magic!</button>
     </form>
-    <form action="${pageContext.request.contextPath}/MyServlet" method="post" style="display: flex; justify-content: center; margin-bottom: 15px">
+    <form action="${pageContext.request.contextPath}/Random" method="get" style="display: flex; justify-content: center;">
+        <button type="submit">Click here to receive random quote in Russian</button>
+    </form>
+    <form action="${pageContext.request.contextPath}/MyServlet" method="post" style="display: flex; justify-content: center;">
         <input type="text" name="submit" placeholder="Type your name" style="width: 300px;" required>
         <button type="submit">And click here, nice guy!</button>
     </form>
