@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 @WebServlet(name = "Random")
@@ -19,7 +20,6 @@ public class Random extends HttpServlet {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         try (PrintWriter writer = response.getWriter()) {
-
             writer.println("<!DOCTYPE html><html>");
             writer.println("<head>");
             writer.println("<meta charset='UTF-8' />");
@@ -29,14 +29,19 @@ public class Random extends HttpServlet {
             writer.println("</head>");
             writer.println("<body class='body'>");
             writer.println("<div class='noContainer'>");
-            writer.println("<h1 class='verticalShit'>"+generateRandomFuck()+"</h1>");
+            writer.println("<h1 class='verticalShit'>" + getRandomFuck() + "</h1>");
             writer.println("</div>");
             writer.println("</body>");
             writer.println("</html>");
         }
     }
 
-    private String generateRandomFuck(){
+    private String getRandomFuck() {
+        List<String> abuses = new FileHandler().fileToArrayList("abuses.txt");
+        return abuses.get(ThreadLocalRandom.current().nextInt(0, abuses.size()));
+    }
+
+    public ArrayList<String> russianAbuses(){
         ArrayList<String> list = new ArrayList<>();
         list.add("Обратите внимание - плинтус. И запомните,это именно ваш уровень.");
         list.add("Бьюсь об заклад, что вас зачали на спор!");
@@ -46,7 +51,6 @@ public class Random extends HttpServlet {
         list.add("Из положительных качеств у тебя только 'резус-фактор'...");
         list.add("Хочешь быть полезным? Запросто! Возьми веревку и повесся в углу!");
         list.add("Когда аист принёс тебя твоим родителям - они долго смеялись и хотели сначала взять аиста.");
-
-        return list.get(ThreadLocalRandom.current().nextInt(0, list.size()));
+        return list;
     }
 }

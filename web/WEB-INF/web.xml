@@ -5,23 +5,44 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>MyServlet</servlet-name>
-        <servlet-class>MyServlet</servlet-class>
+        <servlet-name>main</servlet-name>
+        <servlet-class>Main</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MyServlet</servlet-name>
-        <url-pattern>/MyServlet</url-pattern>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/main</url-pattern>
     </servlet-mapping>
     
     <servlet>
-        <servlet-name>Random</servlet-name>
+        <servlet-name>random</servlet-name>
         <servlet-class>Random</servlet-class>
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>Random</servlet-name>
-        <url-pattern>/Random</url-pattern>
+        <servlet-name>random</servlet-name>
+        <url-pattern>/random</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FileInteract</servlet-name>
+        <servlet-class>FileInteract</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FileInteract</servlet-name>
+        <url-pattern>/FileInteract</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>administration</servlet-name>
+        <servlet-class>Administration</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>administration</servlet-name>
+        <url-pattern>/administration</url-pattern>
     </servlet-mapping>
 
 </web-app>
