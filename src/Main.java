@@ -43,7 +43,7 @@ public class Main extends HttpServlet {
             writer.println("</head>");
             writer.println("<body class='body'>");
             writer.println("<div class='noContainer'>");
-            writer.println("<h1 class='verticalShit'>Now<br/>You<br/>Can<br/>Go<br/>And<br/>Fuck<br/>Yourself</h1>");
+            writer.println("<h1 class='verticalShit'>Now You Can Go And Fuck Yourself</h1>");
             writer.println("</div>");
             writer.println("</body>");
             writer.println("</html>");
