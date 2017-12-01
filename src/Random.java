@@ -29,7 +29,7 @@ public class Random extends HttpServlet {
             writer.println("</head>");
             writer.println("<body class='body'>");
             writer.println("<div class='noContainer'>");
-            writer.println("<h1 class='verticalShit'>" + getRandomFuck() + "</h1>");
+            writer.println("<div class='verticalShit'>" + getRandomFuck() + "</div>");
             writer.println("</div>");
             writer.println("</body>");
             writer.println("</html>");
