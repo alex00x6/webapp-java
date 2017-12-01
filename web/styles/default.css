@@ -23,10 +23,11 @@
     font-family: sans-serif;
     background-color: #A9C3D2;
     display: flex;
-    height: 98vh;
+    height: 100vh;
     background-size: cover;
     background-position: 50% 50%;
     background-image: url("/resources/background.png");
+    overflow-y: hidden;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -40,7 +41,7 @@
         border-radius: 10px;
         border: 1px solid rgba(182, 182, 182, 0.6);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        zoom:1.75;
+        zoom: 1.75;
     }
 
     .noContainer {
@@ -50,16 +51,31 @@
         padding: 5px;
         flex-direction: column;
         width: 98vw;
-        zoom:1.75;
+        zoom: 1.75;
     }
 
     .body {
         font-family: sans-serif;
         background-color: #A9C3D2;
         display: flex;
-        height: 98vh;
+        height: 100vh;
         background-size: cover;
         background-position: 50% 50%;
         background-image: url("/resources/background.png");
     }
+
+}
+
+@media only screen and (orientation: landscape) and (max-device-height: 800px) {
+    .body {
+        font-family: sans-serif;
+        background-color: #A9C3D2;
+        display: flex;
+        height: 100vh;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url("/resources/background.png");
+        overflow-y: hidden;
+    }
+
 }

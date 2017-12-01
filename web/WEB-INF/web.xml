@@ -25,13 +25,13 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>FileInteract</servlet-name>
+        <servlet-name>fileinteract</servlet-name>
         <servlet-class>FileInteract</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>FileInteract</servlet-name>
-        <url-pattern>/FileInteract</url-pattern>
+        <servlet-name>fileinteract</servlet-name>
+        <url-pattern>/fileinteract</url-pattern>
     </servlet-mapping>
 
 

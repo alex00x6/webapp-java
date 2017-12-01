@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "Administration")
+@WebServlet(name = "administration")
 public class Administration extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
@@ -32,10 +32,10 @@ public class Administration extends HttpServlet {
             writer.println("</head>");
             writer.println("<body class='body'>");
             writer.println("<div class='container'>");
-            writer.println("<form action=\"" + request.getContextPath() +"/FileInteract\" method=\"get\" style=\"display: flex; justify-content: center; margin: 10px;\">");
+            writer.println("<form action=\"" + request.getContextPath() +"/fileinteract\" method=\"get\" style=\"display: flex; justify-content: center; margin: 10px;\">");
             writer.println("<button type=\"submit\">Click here to view abuses</button>");
             writer.println("</form>");
-            writer.println("<form action=\"" + request.getContextPath() +"/FileInteract\" method=\"post\" style=\"display: flex; justify-content: center; margin: 10px;\">");
+            writer.println("<form action=\"" + request.getContextPath() +"/fileinteract\" method=\"post\" style=\"display: flex; justify-content: center; margin: 10px;\">");
             writer.println("<button type=\"submit\">Click here to receive file with abuses</button>");
             writer.println(" </form>");
             writer.println("<form action=\"" + request.getContextPath() +"/administration\" method=\"post\" style=\"display: flex; justify-content: center; margin: 10px;\">");
