@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel='stylesheet' type='text/css' href='${pageContext.request.contextPath}/styles/default.css' />
-    <title></title>
+    <title>Java demo app</title>
 </head>
 <body class="body">
 <div class="container">

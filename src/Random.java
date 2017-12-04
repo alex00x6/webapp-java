@@ -22,6 +22,7 @@ public class Random extends HttpServlet {
         try (PrintWriter writer = response.getWriter()) {
             writer.println("<!DOCTYPE html><html>");
             writer.println("<head>");
+            writer.println("<title>Java demo app</title>");
             writer.println("<meta charset='UTF-8' />");
             writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
             writer.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() + "/styles/animation.css' />");

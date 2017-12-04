@@ -16,7 +16,7 @@ public class Main extends HttpServlet {
             writer.println("<!DOCTYPE html><html>");
             writer.println("<head>");
             writer.println("<meta charset='UTF-8'/>");
-            writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
+            writer.println("<title>Java demo app</title>");
             writer.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() +  "/styles/animation.css' />");
             writer.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() +  "/styles/default.css' />");
             writer.println("</head>");
@@ -37,7 +37,7 @@ public class Main extends HttpServlet {
             writer.println("<!DOCTYPE html><html>");
             writer.println("<head>");
             writer.println("<meta charset='UTF-8' />");
-            writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
+            writer.println("<title>Java demo app</title>");
             writer.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() +  "/styles/animation.css' />");
             writer.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() +  "/styles/default.css' />");
             writer.println("</head>");
